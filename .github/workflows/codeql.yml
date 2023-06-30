@@ -1,0 +1,19 @@
+- name: Dart Analyze
+  # You may pin to the exact commit or the version.
+  # uses: ValentinVignal/action-dart-analyze@41eb016b014d6dd742b19b23ee7171bf62348cdd
+  uses: ValentinVignal/action-dart-analyze@v0.15
+  with:
+    # When the action will fail. Optional. Option: `error`, `warning`, `info`, `format`, `nothing`. Default: `error`.
+    fail-on: # optional, default is error
+    # The working directory. Optional. Default: `./`.
+    working-directory: # optional, default is ./
+    # The github token.
+    token: # optional, default is ${{ github.token }}
+    # Whether it should check the renamed files with no changes. Options: `false`, `true`. Default: `false`.
+    check-renamed-files: # optional, default is false
+    # Whether it should include emojis in the comment. Option: `false`, `true`. Default: `true`.
+    emojis: # optional, default is true
+    # Whether it should check the formatting. Options: `true`, `false`. Default: `true`.
+    format: # optional, default is true
+    # The line length for that dart format command. Default: default value for `flutter format`.
+    line-length: # optional
