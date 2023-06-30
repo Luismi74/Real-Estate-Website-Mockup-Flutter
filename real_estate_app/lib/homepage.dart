@@ -19,23 +19,14 @@ class _MainPageState extends State<MainPage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              sevenLTR(
-                const Text('Buy'),
-              ),
-              sevenLTR(
-                const Text('Rent'),
-              ),
-              sevenLTR(
-                const Text('Sell'),
-              ),
-              sevenLTR(
-                const Text('Blog'),
-              ),
-              sevenLTR(
-                const Text('Contact'),
-              ),
-              sevenLTR(
-                const Text('My List'),
+              navbarMenuItem('Buy'),
+              navbarMenuItem('Rent'),
+              navbarMenuItem('Sell'),
+              navbarMenuItem('Blog'),
+              navbarMenuItem('Contact'),
+              Padding(
+                padding: const EdgeInsets.only(right: 20),
+                child: navbarMenuItem('My List'),
               ),
             ],
           )
