@@ -118,7 +118,7 @@ class ListingDescription extends StatelessWidget {
               ),
             ),
             Container(
-              padding: EdgeInsets.only(top: 20),
+              padding: const EdgeInsets.only(top: 20),
               width: 340,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -164,7 +164,166 @@ class ListingDescription extends StatelessWidget {
                   )
                 ],
               ),
-            )
+            ),
+            Container(
+              padding: const EdgeInsets.only(top: 20),
+              width: 340,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        'Features',
+                        style: GoogleFonts.poppins(
+                            color: grayBasic,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 12),
+                      ),
+                      Text(
+                        'Washer/Dryer',
+                        style: GoogleFonts.poppins(
+                            color: flatblack,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w500),
+                      ),
+                      Text(
+                        'Kitchen',
+                        style: GoogleFonts.poppins(
+                            color: flatblack,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w500),
+                      ),
+                    ],
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Patio',
+                        style: GoogleFonts.poppins(
+                            color: flatblack,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w500),
+                      ),
+                      Text(
+                        'Dining Room',
+                        style: GoogleFonts.poppins(
+                            color: flatblack,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w500),
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            ),
+            Container(
+              padding: const EdgeInsets.only(top: 20),
+              width: 340,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        'Expenses',
+                        style: GoogleFonts.poppins(
+                            color: grayBasic,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 12),
+                      ),
+                      Text(
+                        'Application Fee',
+                        style: GoogleFonts.poppins(
+                            color: flatblack,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w500),
+                      ),
+                      Text(
+                        'Covered Parking',
+                        style: GoogleFonts.poppins(
+                            color: flatblack,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w500),
+                      ),
+                      Text(
+                        'Cat Rent',
+                        style: GoogleFonts.poppins(
+                            color: flatblack,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w500),
+                      ),
+                      Text(
+                        'Dog Rent',
+                        style: GoogleFonts.poppins(
+                            color: flatblack,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w500),
+                      ),
+                      Text(
+                        'Other Rent',
+                        style: GoogleFonts.poppins(
+                            color: flatblack,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w500),
+                      ),
+                    ],
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 15.0, right: 60),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text(
+                          '\$100',
+                          style: GoogleFonts.poppins(
+                              color: flatblack,
+                              fontSize: 14,
+                              fontWeight: FontWeight.w500),
+                        ),
+                        Text(
+                          '\$100',
+                          style: GoogleFonts.poppins(
+                              color: flatblack,
+                              fontSize: 14,
+                              fontWeight: FontWeight.w500),
+                        ),
+                        Text(
+                          '\$25',
+                          style: GoogleFonts.poppins(
+                              color: flatblack,
+                              fontSize: 14,
+                              fontWeight: FontWeight.w500),
+                        ),
+                        Text(
+                          '\$50',
+                          style: GoogleFonts.poppins(
+                              color: flatblack,
+                              fontSize: 14,
+                              fontWeight: FontWeight.w500),
+                        ),
+                        Text(
+                          '\$50',
+                          style: GoogleFonts.poppins(
+                              color: flatblack,
+                              fontSize: 14,
+                              fontWeight: FontWeight.w500),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            ),
+            Container()
           ],
         ),
       ),
