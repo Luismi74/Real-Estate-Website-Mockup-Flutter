@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:heroicons/heroicons.dart';
@@ -323,7 +325,31 @@ class ListingDescription extends StatelessWidget {
                 ],
               ),
             ),
-            Container()
+            Container(
+              padding: const EdgeInsets.only(top: 20),
+              width: 340,
+              height: 200,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'About Vantage Collection',
+                    style: GoogleFonts.poppins(
+                        color: grayBasic,
+                        fontWeight: FontWeight.w500,
+                        fontSize: 12),
+                  ),
+                  Text(
+                      'Welcome to this charming 1-bedroom apartment nestled in the heart of vibrant Jersey City. Boasting a generous 723 square feet of living space, this residence offers a cozy and inviting atmosphere that will make you feel right at home.'),
+                  Text(
+                    '\nAs you step inside, youll immediately notice the apartments thoughtful layout, optimizing every inch of space to create a comfortable living environment. The open-concept design seamlessly connects the living area, dining space, and kitchen, providing a versatile setup for modern living.',
+                    overflow: TextOverflow.fade,
+                    maxLines: 3,
+                  )
+                ],
+              ),
+            )
           ],
         ),
       ),
