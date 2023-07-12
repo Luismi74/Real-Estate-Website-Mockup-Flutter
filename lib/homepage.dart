@@ -47,8 +47,11 @@ class _MainPageState extends State<MainPage> {
             )
           ],
         ),
-        body: const Column(
-          children: [ListingDescription()],
+        body: Row(
+          children: [
+            const ListingDescription(),
+            Flexible(child: Image.asset("loft-2.jpg"))
+          ],
         ));
   }
 }
